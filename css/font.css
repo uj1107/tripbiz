@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&family=Poppins:wght@100;200;400;500;700;900&display=swap");
+html {
+  font-size: 18px;
+
+  font-family: "Poppins", sans-serif;
+}
+
+/* layout */
+header {
+  font-size: 0.9rem;
+  color: white;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+footer > p {
+  font-size: 0.7rem;
+  color: #bbb;
+}
+
+footer > ul.menu p {
+  font-size: 0.9rem;
+}
+
+footer > ul.menu h3 {
+  font-size: 1.2rem;
+}
+
+/* home */
+#home-main > .wrap > div > a.button {
+  color: white;
+  font-weight: 200;
+}
+
+#home-main > .top-slider h1,
+#home-main > .top-slider p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+#home-main > .top-slider h1 {
+  font-size: 2.8rem;
+}
+
+#home-main > .top-slider p {
+  font-size: 1.5rem;
+}
+
+#home-main > .top-slider .slide div a {
+  font-size: 0.9rem;
+}
+
+#home-main > .wrap {
+  color: #bbb;
+}
+
+#home-main > .wrap > h1 {
+  font-weight: 700;
+}
+
+#home-main > .wrap > p {
+  font-size: 0.9rem;
+}
+#home-main .range-wrap > p {
+  color: #001e3d;
+}
+#home-main .range-wrap > .multi-range > .range-slider > .thumb > span {
+  font-size: 0.8rem;
+}
+
+#home-main .range-wrap > a {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#home-main > .packages > div > .content-wrap > div {
+  color: #001e3d;
+}
+#home-main > .packages > div > .content-wrap > div > h4 {
+  font-size: 1.4rem;
+}
+#home-main > .packages > div > .content-wrap > div > h2 {
+  font-size: 2.2rem;
+}
+#home-main > .packages > div > .content-wrap > div > h2:first-of-type {
+  color: #0866a4;
+}
+#home-main > .packages > div > .content-wrap > div > p {
+  font-size: 0.9rem;
+}
+#home-main > .packages > div > .content-wrap > div > a {
+  color: white;
+  font-weight: 200;
+}
+
+#home-main > .services > div > .content-wrap {
+  color: black;
+}
+
+#home-main > .blog > div > .content-wrap > div > span {
+  color: white;
+  font-size: 1.25rem;
+}
+#home-main > .blog > div > .content-wrap > div > div > h4 {
+  font-size: 1.1rem;
+  color: #323232;
+}
+#home-main > .blog > div > .content-wrap > div > div > p {
+  font-size: 0.9rem;
+  color: #040404;
+}
+#home-main > .blog > div > .content-wrap > div > div > p {
+  font-size: 0.9rem;
+}
+#home-main > .blog > div > .content-wrap > a {
+  color: white;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  html {
+    font-size: 11px;
+  }
+  #home-main > .top-slider .slide2 h1,
+  #home-main > .top-slider .slide2 p {
+    color: #0b97ac;
+  }
+
+  #home-main > .packages > div > .content-wrap > div > h4 {
+    font-size: 1rem;
+  }
+
+  #home-main > .packages > div > .content-wrap > div > h2 {
+    font-size: 1.8rem;
+  }
+
+  #home-main > .blog > div > .content-wrap > div > span {
+    font-size: 1rem;
+  }
+
+  #home-main > .blog > div > .content-wrap > div > div > h4 {
+    font-size: 0.9rem;
+  }
+}

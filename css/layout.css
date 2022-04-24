@@ -1,0 +1,432 @@
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  margin: 0 auto;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-height: 9580px;
+  overflow: hidden;
+
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: fixed;
+  z-index: 100;
+
+  width: 100%;
+  padding: 30px 100px 30px 100px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+}
+
+header > a.logo {
+  flex: 1;
+
+  display: block;
+  width: 85px;
+  height: 27px;
+
+  background-image: url(../img/logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header > ul {
+  text-align: center;
+
+  margin-left: 200px;
+  flex: 8;
+
+  display: flex;
+  align-items: center;
+}
+
+header > ul > li {
+  flex: 1;
+}
+
+header > ul > li:last-of-type {
+  border: 1px white solid;
+  box-sizing: border-box;
+}
+
+/* main 메인 */
+.main {
+  width: 100%;
+}
+
+/* footer */
+footer {
+  width: 1300px;
+  height: 650px;
+  border-radius: 650px 650px 0 0;
+  background-color: white;
+  margin-top: 150px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+footer > ul.sns {
+  flex: 3;
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+}
+
+footer > ul.sns > li {
+  flex: 1;
+
+  padding-left: 10px;
+}
+
+footer > ul.sns > li:first-of-type {
+  padding-left: 0;
+}
+
+footer > ul.sns > li > a {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+footer > ul.sns > li:first-of-type > a {
+  background-image: url(../img/sns1.png);
+}
+footer > ul.sns > li:nth-of-type(2) > a {
+  background-image: url(../img/sns2.png);
+}
+footer > ul.sns > li:nth-of-type(3) > a {
+  background-image: url(../img/sns3.png);
+}
+footer > ul.sns > li:last-of-type > a {
+  background-image: url(../img/sns4.png);
+}
+
+footer > ul.menu {
+  flex: 3;
+  display: flex;
+}
+
+footer > ul.menu > li {
+  padding-right: 100px;
+}
+
+footer > ul.menu > li:last-of-type {
+  padding-right: 0;
+}
+
+footer > ul.menu > li > h3 {
+  margin-bottom: 15px;
+}
+
+footer > ul.menu > li > form {
+  margin-top: 15px;
+}
+
+footer > ul.menu > li > form > input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  background-color: #011128;
+  box-sizing: border-box;
+  padding-left: 10px;
+  color: white;
+}
+footer > ul.menu > li > form > input::placeholder {
+  color: white;
+}
+footer > ul.menu > li > form > button {
+  margin-top: 10px;
+  width: 85%;
+  height: 40px;
+  border: 0;
+  background-color: #144a9e;
+  color: white;
+  cursor: pointer;
+}
+
+footer > ul.menu > li:last-of-type > p {
+  margin-bottom: 25px;
+}
+
+footer > ul.menu > li i {
+  margin-right: 10px;
+  color: #144a9e;
+}
+
+footer > hr {
+  width: 60%;
+  height: 0.5px;
+  background-color: #ccc;
+}
+
+footer > p {
+  flex: 0.8;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    max-height: 9580px;
+  }
+
+  header {
+    padding: 30px 50px;
+  }
+
+  header > a.logo {
+    flex: 1;
+  }
+
+  header > ul {
+    margin-left: 100px;
+  }
+
+  /* footer */
+  footer {
+    width: 100%;
+    max-height: 330px;
+    border-radius: 0;
+
+    margin-top: 100px;
+  }
+
+  footer > ul.sns {
+    flex: 1;
+  }
+
+  footer > ul.sns > li > a {
+    width: 25px;
+    height: 25px;
+
+    background-size: contain;
+  }
+
+  footer > ul.menu {
+    padding-left: 50px;
+  }
+
+  footer > ul.menu > li {
+    padding-right: 20px;
+  }
+
+  footer > ul.menu > li:last-of-type > h3 {
+    margin-bottom: 30px;
+  }
+
+  footer > ul.menu > li > form {
+    display: flex;
+  }
+
+  footer > ul.menu > li > form > input {
+    flex: 1;
+  }
+  footer > ul.menu > li > form > button {
+    flex: 0.5;
+    margin: 0;
+  }
+
+  footer > ul.menu > li:last-of-type > p {
+    margin-bottom: 20px;
+  }
+
+  footer > p {
+    flex: 0.6;
+  }
+
+  footer > hr {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .mobile-none {
+    display: none;
+  }
+
+  header {
+    padding: 10px 10px;
+    z-index: 101;
+  }
+
+  header > a.logo {
+    background-position: left;
+    margin-left: 10px;
+    height: 20px;
+  }
+
+  header > ul {
+    display: none;
+  }
+
+  /* hamburger 햄버거 메뉴 */
+  #ham-button {
+    position: relative;
+
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
+  #ham-button > span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    transition: 0.5s;
+
+    display: block;
+    width: 80%;
+    height: 2px;
+
+    background-color: white;
+  }
+  #ham-button.click > span {
+    background-color: black;
+  }
+
+  #ham-button > span:first-of-type {
+    top: 20%;
+  }
+  #ham-button > span:nth-of-type(2) {
+    top: 50%;
+  }
+  #ham-button > span:last-of-type {
+    top: 80%;
+  }
+  #ham-button.click > span:first-of-type {
+    transform: rotate(45deg);
+    left: 10%;
+    top: 50%;
+  }
+  #ham-button.click > span:nth-of-type(2) {
+    background-color: transparent;
+  }
+  #ham-button.click > span:last-of-type {
+    transform: rotate(-45deg);
+    left: 10%;
+    top: 50%;
+  }
+
+  #ham-menu {
+    position: fixed;
+    z-index: 100;
+    right: -100%;
+    transition: 0.5s;
+
+    width: 80%;
+    height: 100%;
+    background-color: white;
+  }
+  #ham-menu.click {
+    right: 0;
+  }
+
+  #ham-menu > ul,
+  #ham-menu > a {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 20%;
+    right: 10%;
+    text-align: right;
+  }
+
+  #ham-menu > a {
+    top: 90%;
+  }
+
+  #ham-menu > a > #searchbox-m {
+    position: absolute;
+    width: 165px;
+    height: 100%;
+    right: 15px;
+    overflow-x: hidden;
+  }
+
+  #ham-menu > a > #searchbox-m > input {
+    position: absolute;
+    right: -165px;
+    transition: 0.5s;
+
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+  #ham-menu > a > #searchbox-m.click > input {
+    right: 15px;
+  }
+
+  #ham-menu > ul > li {
+    margin-top: 30px;
+  }
+
+  /* footer */
+  footer {
+    max-height: 380px;
+  }
+
+  footer > ul.sns {
+    flex: 0.6;
+  }
+
+  footer > ul.menu {
+    padding: 0 20px;
+    flex: 1.5;
+  }
+
+  footer > ul.menu > li {
+    padding-right: 20px;
+  }
+
+  footer > ul.menu > li > form {
+    display: block;
+  }
+
+  footer > ul.menu > li > form > input {
+    width: 100%;
+    height: 30px;
+  }
+  footer > ul.menu > li > form > button {
+    width: 70%;
+    height: 30px;
+    margin-top: 5px;
+  }
+
+  footer > ul.menu > li:last-of-type > p {
+    margin-bottom: 20px;
+  }
+
+  footer > p {
+    flex: 0.6;
+  }
+
+  footer > hr {
+    width: 40%;
+  }
+}

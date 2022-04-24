@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripBiz</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <!-- fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/9b1f565e97.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- j query -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- js -->
+    <script src="./js/tripbiz.js"></script>
+    <!-- slick -->
+    <script src="./js/slick.min.js"></script>
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="home.html" class="logo"></a>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#none">Book Trip</a></li>
+          <li><a href="#none">Packages</a></li>
+          <li><a href="#none">Services</a></li>
+          <li><a href="#none">Blog</a></li>
+          <li>
+            <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li><a href="#none">Get A Quote</a></li>
+        </ul>
+        <a href="#none" class="mobile-only" id="ham-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </header>
+
+      <!-- hamburger menu 햄버거 메뉴 -->
+      <div class="mobile-only" id="ham-menu">
+        <ul>
+          <li><a href="#none">Home</a></li>
+          <li><a href="#none">Book Trip</a></li>
+          <li><a href="#none">Packages</a></li>
+          <li><a href="#none">Services</a></li>
+          <li><a href="#none">Blog</a></li>
+        </ul>
+        <a href="#none">
+          <form action="" id="searchbox-m">
+            <input type="search" placeholder=" enter a search word..." />
+          </form>
+          <i class="fa-solid fa-magnifying-glass" id="search-m"></i
+        ></a>
+      </div>
+      <!-- main 메인 -->
+      <div class="main" id="home-main">
+        <div class="top-slider">
+          <div class="slide slide1">
+            <h1>TripBiz</h1>
+            <p>A Human Explostion</p>
+            <hr noshade="noshade" />
+            <div><a href="#none"> Discover More</a></div>
+          </div>
+          <div class="slide slide2">
+            <h1>TripBiz</h1>
+            <p>A Human Explostion</p>
+            <hr noshade="noshade" />
+            <div><a href="#none"> Discover More</a></div>
+          </div>
+        </div>
+        <!-- book 예약-->
+        <div class="wrap book">
+          <h1>Book Your Trip</h1>
+          <hr noshade="noshade" />
+          <p>
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit
+          </p>
+          <div class="ellipse">
+            <div><img src="./img/main1.png" alt="" /></div>
+            <form action="">
+              <input type="text" placeholder="Where You Want To Go?" />
+              <input type="text" placeholder="All Locations" />
+              <select name="" id="">
+                <option value="" selected>All Languages</option>
+                <option value="">Korean</option>
+                <option value="">English</option>
+                <option value="">Arabic</option>
+                <option value="">Thai</option>
+                <option value="">Chinese</option>
+                <option value="">Japanese</option>
+              </select>
+              <input type="text" placeholder="All Tour Type" />
+            </form>
+            <div class="range-wrap">
+              <p>Select Price Range</p>
+              <div class="multi-range">
+                <input
+                  type="range"
+                  id="input-l"
+                  min="200"
+                  max="10000"
+                  value="200"
+                />
+                <input
+                  type="range"
+                  id="input-r"
+                  min="200"
+                  max="10000"
+                  value="10000"
+                />
+                <div class="range-slider">
+                  <div class="track"></div>
+                  <div class="range"></div>
+                  <div class="thumb" id="thumb-l">
+                    <span id="span-l">200</span>
+                  </div>
+                  <div class="thumb" id="thumb-r">
+                    <span id="span-r">10000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="button" href="#none">Book Now</a>
+          </div>
+        </div>
+        <!-- our packages 패키지 -->
+        <div class="wrap packages">
+          <h1>Our Packages</h1>
+          <hr noshade="noshade" />
+          <p>
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit
+          </p>
+          <div class="ellipse">
+            <div class="img"><img src="./img/main2.png" alt="" /></div>
+            <div class="content-wrap">
+              <div>
+                <h4>Basic Rate</h4>
+                <h2>$</h2>
+                <h2>200</h2>
+                <hr noshade="noshade" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+                <a href="#none">Book Now</a>
+              </div>
+              <div>
+                <h4>Special Rate</h4>
+                <h2>$</h2>
+                <h2>300</h2>
+                <hr noshade="noshade" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor
+                </p>
+                <a href="#none">Book Now</a>
+              </div>
+            </div>
+            <a class="button" href="#none">See More</a>
+          </div>
+        </div>
+        <!-- service 서비스 -->
+        <div class="wrap services">
+          <h1>Our Services</h1>
+          <hr noshade="noshade" />
+          <p>
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit
+          </p>
+          <div class="ellipse">
+            <div class="content-wrap">
+              <div>
+                <img src="./img/main3-1.png" alt="" />
+                <h4>Best Hotels</h4>
+                <p class="mobile-none">
+                  Lorem ipsum dolor sit amet, <br />
+                  consectetur adipi
+                </p>
+              </div>
+              <div>
+                <img src="./img/main3-2.png" alt="" />
+                <h4>Best Hotels</h4>
+                <p class="mobile-none">
+                  Lorem ipsum dolor sit amet, <br />
+                  consectetur adipi
+                </p>
+              </div>
+              <div>
+                <img src="./img/main3-3.png" alt="" />
+                <h4>Best Hotels</h4>
+                <p class="mobile-none">
+                  Lorem ipsum dolor sit amet, <br />
+                  consectetur adipi
+                </p>
+              </div>
+            </div>
+            <a href="#none" class="button">Read More</a>
+          </div>
+        </div>
+        <!-- blog 블로그 -->
+        <div class="wrap blog">
+          <h1>Our Blog</h1>
+          <hr noshade="noshade" />
+          <p>
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit
+          </p>
+          <div class="ellipse">
+            <div class="content-wrap">
+              <div>
+                <span>$130</span>
+                <img src="./img/main4-1.jpg" alt="" />
+                <div>
+                  <h4>Island Trip</h4>
+                  <p>Duration : 4hours 20mminutes</p>
+                  <span
+                    >It is a long established fact that a reader will be
+                    distracted by
+                  </span>
+                </div>
+              </div>
+              <a href="#none">Book Now</a>
+            </div>
+            <div class="content-wrap">
+              <div>
+                <span>$160</span>
+                <img src="./img/main4-2.jpg" alt="" />
+                <div>
+                  <h4>Warsaw Day Tour</h4>
+                  <p>Duration : 4hours 20mminutes</p>
+                  <span
+                    >It is a long established fact that a reader will be
+                    distracted by
+                  </span>
+                </div>
+              </div>
+              <a href="#none">Book Now</a>
+            </div>
+            <div class="content-wrap">
+              <div>
+                <span>$140</span>
+                <img src="./img/main4-3.jpg" alt="" />
+                <div>
+                  <h4>Warsaw Day Tour</h4>
+                  <p>Duration : 4hours 20mminutes</p>
+                  <span
+                    >It is a long established fact that a reader will be
+                    distracted by
+                  </span>
+                </div>
+              </div>
+              <a href="#none">Book Now</a>
+            </div>
+            <div class="content-wrap">
+              <div>
+                <span>$150</span>
+                <img src="./img/main4-4.jpg" alt="" />
+                <div>
+                  <h4>Santorini Islands Tour</h4>
+                  <p>Duration : 4hours 20mminutes</p>
+                  <span
+                    >It is a long established fact that a reader will be
+                    distracted by
+                  </span>
+                </div>
+              </div>
+              <a href="#none">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Words 뉴스 -->
+        <div class="wrap words">
+          <h1>What Words Of Tourists</h1>
+          <hr noshade="noshade" />
+          <p>
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit
+          </p>
+          <div class="ellipse">
+            <span></span>
+            <span></span>
+            <div id="words-slider">
+              <div class="slide slide1">
+                <div class="img"></div>
+                <div class="content">
+                  <h3>LIQUIP EX 01</h3>
+                  <p>
+                    tempor incididunt ut labore et dolore magna aliqua.orem
+                    ipsum dolor sit ametLorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod
+                  </p>
+                </div>
+              </div>
+              <div class="slide slide2">
+                <div class="img"></div>
+                <div class="content">
+                  <h3>LIQUIP EX 02</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex eaLorem ipsum dolor sit
+                    amet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrap">
+          <h1>Contact Us</h1>
+          <hr noshade="noshade" />
+          <p>
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit
+          </p>
+        </div>
+      </div>
+      <footer>
+        <ul class="sns">
+          <li><a href="#none"></a></li>
+          <li><a href="#none"></a></li>
+          <li><a href="#none"></a></li>
+          <li><a href="#none"></a></li>
+        </ul>
+        <ul class="menu">
+          <li>
+            <h3>SUBSCRIBE NEWSLETTER</h3>
+            <p>
+              ncididunt ut labore et dolore magna <br />
+              minim veniam, quis nostrud
+            </p>
+            <form action="">
+              <input type="email" placeholder="Enter your email" />
+              <button>SUBSCRIBE</button>
+            </form>
+          </li>
+          <li>
+            <h3>USEFUL LINK</h3>
+            <ul>
+              <li>Home</li>
+              <li>Book trip</li>
+              <li>Packages</li>
+              <li>Services</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>
+            <h3>ADRESS</h3>
+            <p>
+              <i class="fa-solid fa-location-dot"></i>Passages of Lorem Ipsum
+              available
+            </p>
+            <p><i class="fa-solid fa-phone"></i>Call : +01234567890</p>
+            <p><i class="fa-solid fa-envelope"></i>demo@gmail.com</p>
+          </li>
+        </ul>
+        <hr noshade="noshade" />
+        <p>© 2021 All Rights Reserved. Design by Free Html Templates</p>
+      </footer>
+    </div>
+  </body>
+</html>
