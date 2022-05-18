@@ -1,4 +1,14 @@
 $(document).ready(function () {
+  $("#search").on("click", function () {
+    $("#search_box").addClass("click");
+  });
+
+  $("#search_box").click(function (e) {
+    if (!$(e.target).hasClass("input_box")) {
+      $("#search_box").removeClass("click");
+    }
+  });
+
   $(".top-slider").slick({
     fade: true,
     cssEase: "linear",

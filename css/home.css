@@ -540,7 +540,7 @@ input[type="range"]::-webkit-slider-thumb {
   background: #001e3d;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 900px) {
   .top-slider {
     width: 100%;
     margin: 0;
@@ -692,7 +692,7 @@ input[type="range"]::-webkit-slider-thumb {
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 425px) {
   .top-slider {
     width: 100%;
     margin: 0;
