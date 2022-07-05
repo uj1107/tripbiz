@@ -11,6 +11,7 @@ $(document).ready(function () {
 
   $(".top-slider").slick({
     fade: true,
+    autoplay: true,
     cssEase: "linear",
     prevArrow: '<button class="slide-arrow prev-arrow1"><</button>',
     nextArrow: '<button class="slide-arrow next-arrow1">></button>',
